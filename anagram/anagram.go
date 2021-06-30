@@ -3,15 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var str1 string
-	var str2 string
-	fmt.Println("Enter First String")
-	fmt.Scanf("%s", &str1)
-	fmt.Println("Enter Second String")
-	fmt.Scanf("%s", &str2)
+	var str1 string = "anc"
+	var str2 string = "cana"
+	// fmt.Println("Enter First String")
+	// fmt.Scanf("%s", &str1)
+	// fmt.Println("Enter Second String")
+	// fmt.Scanf("%s", &str2)
 
 	if len(str1) != len(str2) {
 		fmt.Println("These strings are not anagram")
+		return
 	}
 
 	// Using Hashing Technique
